@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import DiaryList from "./DiaryList";
 import DiaryDetail from "./DiaryDetail";
-import { diaries } from "./database";
+import Diary from "./Diary";
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
         <Route path="/person" element={<Person />} />
         <Route path="/diary" element={<DiaryList />} />
         <Route path="/diary/:diaryNum" element={<DiaryDetail />} />
+        <Route path="/dtitle" element={<Diary />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

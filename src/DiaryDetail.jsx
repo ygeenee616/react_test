@@ -9,7 +9,7 @@ function DiaryDetail() {
   const contents = diaries[diaryNum].c;
 
   const goBack = () => {
-    navigate("/diary");
+    navigate("/dtitle", { state: { idx: diaryNum } });
   };
 
   const goHome = () => {
