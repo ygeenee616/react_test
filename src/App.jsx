@@ -3,6 +3,9 @@ import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import DiaryList from "./DiaryList";
 import DiaryDetail from "./DiaryDetail";
 import Diary from "./Diary";
+import TodoApp from "./TodoApp";
+import ParentComp from "./ChildComp";
+import Counter from "./Counter";
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
         <Route path="/diary" element={<DiaryList />} />
         <Route path="/diary/:diaryNum" element={<DiaryDetail />} />
         <Route path="/dtitle" element={<Diary />} />
+        <Route path="/todo" element={<TodoApp />} />
+        <Route path="/par" element={<ParentComp />} />
+        <Route path="/cnt" element={<Counter />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
